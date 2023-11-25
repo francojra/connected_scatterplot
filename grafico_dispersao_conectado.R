@@ -71,3 +71,15 @@ data |>
     geom_point(shape = 21, color = "black", fill = "#69b3a2", size = 6) +
     theme_ipsum() +
     ggtitle("Evolution of bitcoin price")
+
+# Gráfico de dispersão conectado para mostrar uma evolução ---------------------------------------------------------------------------------
+
+### O gráfico de dispersão conectado pode ser um técnica poderosa para apresentar
+### a história da evolução de duas variáveis. Considere um dataset composto de
+### de três colunas.
+
+### Year
+### Number of baby born called Amanda this year
+### Number of baby born called Ashley
+
+### Faz sentido também adicionar setas e rótulos para guiar o leitor no gráfico.
