@@ -34,3 +34,11 @@ data <- read.table("https://raw.githubusercontent.com/holtzy/data_to_viz/master/
                    header = T)
 data$date <- as.Date(data$date)
 View(data)
+
+### Gráfico:
+
+data |>
+  tail(10) |>
+  ggplot(aes(x = date, y = value)) +
+    geom_line() +
+    geom_point()
