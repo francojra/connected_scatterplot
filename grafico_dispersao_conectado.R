@@ -6,5 +6,8 @@
 
 # Introdução -------------------------------------------------------------------------------------------------------------------------------
 
+### É importante entender que um gráfico de dispersão conectado é basicamente uma
+### junção entre um gráfico de dispersão e um gráfico de linhas.
 
+### 
 
