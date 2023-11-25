@@ -42,3 +42,9 @@ data |>
   ggplot(aes(x = date, y = value)) +
     geom_line() +
     geom_point()
+
+# Customizando o gráfico de dispersão conectado --------------------------------------------------------------------------------------------
+
+### É possível customizar o tema geral do gráfico usando a função theme_ipsum()
+### do pacote hrbrthemes, adicionar um título com ggtitle() e customizar pontos
+### e linhas com shape, color, size, etc.
