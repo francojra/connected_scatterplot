@@ -16,3 +16,21 @@
 ### Para esse segundo tipo de gráfico, pode ser usado anotações sobre a terceira
 ### variável.
 
+### Um terceiro tipo de gráfico comumente usado para dispersão conectada são os
+### gráficos de séries temporais.
+
+# Exemplo de gráfico de dispersão conectada com ggplot2 ------------------------------------------------------------------------------------
+
+### O gráfico mais básico usa como camadas o geom_point() e o geom_line().
+
+### Pacotes:
+
+library(ggplot2)
+library(dplyr)
+
+### Carregar dados do GitHub:
+
+data <- read.table("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/3_TwoNumOrdered.csv", 
+                   header = T)
+data$date <- as.Date(data$date)
+View(data)
