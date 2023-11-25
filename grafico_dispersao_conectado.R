@@ -48,3 +48,26 @@ data |>
 ### É possível customizar o tema geral do gráfico usando a função theme_ipsum()
 ### do pacote hrbrthemes, adicionar um título com ggtitle() e customizar pontos
 ### e linhas com shape, color, size, etc.
+
+### Pacotes:
+
+library(ggplot2)
+library(dplyr)
+library(hrbrthemes)
+
+### Carregar dados do GitHub:
+
+data <- read.table("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/3_TwoNumOrdered.csv", 
+                   header = T)
+data$date <- as.Date(data$date)
+View(data)
+
+### Gráfico:
+
+data |>
+  tail(10) |>
+  ggplot(aes(x = date, y = value)) +
+    geom_line(color = "grey") +
+    geom_point(shape = 21, color = "black", fill = "#69b3a2", size = 6) +
+    theme_ipsum() +
+    ggtitle("Evolution of bitcoin price")
